@@ -1,4 +1,3 @@
-<!-- templates/template.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +15,8 @@
       text-align: center;
       margin: 1rem;
       cursor: pointer;
+      position: relative;
+      overflow: visible;
     }
     .icon i {
       font-size: 2rem;
@@ -26,31 +27,111 @@
       display: block;
       color: #333;
     }
+    .tooltip {
+      position: absolute;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      background-color: #333;
+      color: #fff;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 10;
+    }
+    .tooltip.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+    .tooltip.hide {
+      opacity: 0;
+      transform: translateX(-50%) translateY(10px);
+      pointer-events: none;
+    }
   </style>
+  <script>
+    div.addEventListener('click', () => {
+  navigator.clipboard.writeText(`icon-${name}`);
+
+  tooltip.classList.remove('hide');
+  tooltip.classList.add('show');
+
+  // Después de 1.5s ocultar con transition
+  setTimeout(() => {
+    tooltip.classList.remove('show');
+    tooltip.classList.add('hide');
+  }, 500);
+});
+
+  </script>
 </head>
 <body>
   <h1>Icon Font Demo</h1>
   <div id="icon-grid"></div>
 
   <script>
-    const icons = [
-      
-    ];
+    function getIconClassNames() {
+      const classNames = [];
+      for (const sheet of document.styleSheets) {
+        try {
+          for (const rule of sheet.cssRules) {
+            if (rule.selectorText?.startsWith('.icon-')) {
+              const matches = rule.selectorText.match(/\.icon-([a-zA-Z0-9_-]+)/g);
+              if (matches) {
+                matches.forEach(sel => {
+                  const name = sel.replace('.icon-', '');
+                  if (!classNames.includes(name)) {
+                    classNames.push(name);
+                  }
+                });
+              }
+            }
+          }
+        } catch (e) {
+          // Ignorar reglas protegidas por CORS
+        }
+      }
+      return classNames.sort();
+    }
 
-    const grid = document.getElementById('icon-grid');
-    icons.forEach(name => {
-      const div = document.createElement('div');
-      div.className = 'icon';
-      div.innerHTML = `
-        <i class="icon-${name}"></i>
-        <span>.icon-${name}</span>
-      `;
-      div.addEventListener('click', () => {
-        navigator.clipboard.writeText(`icon-${name}`);
-        alert(\`Copied: icon-${name}\`);
+    function renderIcons() {
+      const icons = getIconClassNames();
+      const grid = document.getElementById('icon-grid');
+
+      icons.forEach(name => {
+        const div = document.createElement('div');
+        div.className = 'icon';
+        div.innerHTML = `
+          <i class="icon-${name}"></i>
+          <span>.icon-${name}</span>
+          <div class="tooltip">Copiado</div>
+        `;
+        const tooltip = div.querySelector('.tooltip');
+
+        div.addEventListener('click', () => {
+          navigator.clipboard.writeText(`icon-${name}`);
+
+          tooltip.classList.remove('hide');
+          tooltip.classList.add('show');
+
+          setTimeout(() => {
+            tooltip.classList.remove('show');
+            tooltip.classList.add('hide');
+          }, 1500);
+        });
+
+        grid.appendChild(div);
       });
-      grid.appendChild(div);
-    });
+    }
+
+    window.onload = () => {
+      renderIcons();
+    };
   </script>
 </body>
 </html>

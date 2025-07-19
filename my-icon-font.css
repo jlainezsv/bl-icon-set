@@ -1,9 +1,9 @@
 @font-face {
     font-family: "my-icon-font";
-    src: url("./my-icon-font.woff2?20d86496b02096255a997b2fd3df504f") format("woff2"),
-url("./my-icon-font.woff?20d86496b02096255a997b2fd3df504f") format("woff"),
-url("./my-icon-font.ttf?20d86496b02096255a997b2fd3df504f") format("truetype"),
-url("./my-icon-font.svg?20d86496b02096255a997b2fd3df504f#my-icon-font") format("svg");
+    src: url("./my-icon-font.woff2?8ef3b068701bbb1fc61299442ea6c376") format("woff2"),
+url("./my-icon-font.woff?8ef3b068701bbb1fc61299442ea6c376") format("woff"),
+url("./my-icon-font.ttf?8ef3b068701bbb1fc61299442ea6c376") format("truetype"),
+url("./my-icon-font.svg?8ef3b068701bbb1fc61299442ea6c376#my-icon-font") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -35,12 +35,15 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-power:before {
     content: "\f106";
 }
-.icon-heart:before {
+.icon-pencil:before {
     content: "\f107";
 }
-.icon-comment-alt:before {
+.icon-heart:before {
     content: "\f108";
 }
-.icon-apps:before {
+.icon-comment-alt:before {
     content: "\f109";
+}
+.icon-apps:before {
+    content: "\f10a";
 }
