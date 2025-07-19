@@ -1,141 +1,56 @@
+<!-- templates/template.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>my-icon-font</title>
-
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        .preview {
-            width: 100px;
-            display: inline-block;
-            margin: 10px;
-        }
-        .preview .inner {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            background: #f5f5f5;
-            -webkit-border-radius: 3px 3px 0 0;
-            -moz-border-radius: 3px 3px 0 0;
-            border-radius: 3px 3px 0 0;
-        }
-        .preview .inner  {
-            line-height: 85px;
-            font-size: 40px;
-            color: #333;
-        }
-        .label {
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 5px;
-            font-size: 10px;
-            font-family: Monaco, monospace;
-            color: #666;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            background: #ddd;
-            -webkit-border-radius: 0 0 3px 3px;
-            -moz-border-radius: 0 0 3px 3px;
-            border-radius: 0 0 3px 3px;
-            color: #666;
-        }
-    </style>
-
-    <link rel="stylesheet" type="text/css" href="my-icon-font.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Icon Font Demo</title>
+  <link rel="stylesheet" href="my-icon-font.css" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    .icon {
+      display: inline-block;
+      text-align: center;
+      margin: 1rem;
+      cursor: pointer;
+    }
+    .icon i {
+      font-size: 2rem;
+      display: block;
+    }
+    .icon span {
+      margin-top: 0.5rem;
+      display: block;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
+  <h1>Icon Font Demo</h1>
+  <div id="icon-grid"></div>
 
-    <h1>my-icon-font</h1>
+  <script>
+    const icons = [
+      
+    ];
 
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-user"></i>
-            </span>
-            <br>
-            <span class='label'>user</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-time-past"></i>
-            </span>
-            <br>
-            <span class='label'>time-past</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-shopping-cart"></i>
-            </span>
-            <br>
-            <span class='label'>shopping-cart</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-settings-sliders"></i>
-            </span>
-            <br>
-            <span class='label'>settings-sliders</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-search"></i>
-            </span>
-            <br>
-            <span class='label'>search</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-power"></i>
-            </span>
-            <br>
-            <span class='label'>power</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-heart"></i>
-            </span>
-            <br>
-            <span class='label'>heart</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-comment-alt"></i>
-            </span>
-            <br>
-            <span class='label'>comment-alt</span>
-        </div>
-
-
-        <div class="preview">
-            <span class="inner">
-                <i class="icon icon-apps"></i>
-            </span>
-            <br>
-            <span class='label'>apps</span>
-        </div>
-
-
+    const grid = document.getElementById('icon-grid');
+    icons.forEach(name => {
+      const div = document.createElement('div');
+      div.className = 'icon';
+      div.innerHTML = `
+        <i class="icon-${name}"></i>
+        <span>.icon-${name}</span>
+      `;
+      div.addEventListener('click', () => {
+        navigator.clipboard.writeText(`icon-${name}`);
+        alert(\`Copied: icon-${name}\`);
+      });
+      grid.appendChild(div);
+    });
+  </script>
 </body>
 </html>

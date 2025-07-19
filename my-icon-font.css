@@ -6,7 +6,7 @@ url("./my-icon-font.ttf?20d86496b02096255a997b2fd3df504f") format("truetype"),
 url("./my-icon-font.svg?20d86496b02096255a997b2fd3df504f#my-icon-font") format("svg");
 }
 
-.icon:before {
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
     font-family: my-icon-font !important;
     font-style: normal;
     font-weight: normal !important;
@@ -17,30 +17,30 @@ url("./my-icon-font.svg?20d86496b02096255a997b2fd3df504f#my-icon-font") format("
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon.icon-user:before {
+.icon-user:before {
     content: "\f101";
 }
-.icon.icon-time-past:before {
+.icon-time-past:before {
     content: "\f102";
 }
-.icon.icon-shopping-cart:before {
+.icon-shopping-cart:before {
     content: "\f103";
 }
-.icon.icon-settings-sliders:before {
+.icon-settings-sliders:before {
     content: "\f104";
 }
-.icon.icon-search:before {
+.icon-search:before {
     content: "\f105";
 }
-.icon.icon-power:before {
+.icon-power:before {
     content: "\f106";
 }
-.icon.icon-heart:before {
+.icon-heart:before {
     content: "\f107";
 }
-.icon.icon-comment-alt:before {
+.icon-comment-alt:before {
     content: "\f108";
 }
-.icon.icon-apps:before {
+.icon-apps:before {
     content: "\f109";
 }
