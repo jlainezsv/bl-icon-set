@@ -1,0 +1,11 @@
+{
+  "inputDir": "./src/icons",
+  "outputDir": "./dist",
+  "fontTypes": ["woff2", "woff", "ttf", "svg"],
+  "assetTypes": ["css", "html"],
+  "name": "my-icon-font",
+  "prefix": "icon",
+  "selector": ".icon",
+  "tag": "i",
+  "fontsUrl": ""
+}
