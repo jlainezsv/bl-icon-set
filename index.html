@@ -1,104 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="iconSearchApp()" x-init="init">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>my-icon-font</title>
+  <title>Icon Font Demo</title>
   <link rel="stylesheet" href="my-icon-font.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <style>
     body {
       font-family: sans-serif;
       padding: 2rem;
-      text-align: center;
     }
-    h1 {
-      margin-bottom: 1rem;
+
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
     }
-    #icon-grid {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+
     .icon {
-      background: #f0f0f0;
-      border-radius: 4px;
-      padding: 1rem;
-      width: 80px;
+      display: inline-block;
+      text-align: center;
+      margin: 1rem;
       cursor: pointer;
-      user-select: none;
+      padding: 1rem;
+      background: #f5f5f5;
+      border-radius: 8px;
+      width: 100px;
+      position: relative;
     }
+
     .icon i {
-      font-size: 2.5rem;
+      font-size: 2rem;
       display: block;
       margin-bottom: 0.5rem;
-      color: #333;
     }
+
     .icon span {
-      font-size: 0.75rem;
-      color: #777;
-      user-select: text;
+      display: block;
+      font-size: 0.9rem;
+      color: #666;
+      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
     }
+
+    .copied-message {
+      background: #4f46e5;
+      color: white;
+      padding: 1rem;
+      border-radius: 12px;
+      font-weight: bold;
+      text-align: center;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .copied-message.show {
+      opacity: 1;
+    }
+    .tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #4f46e5;
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Animaciones con AlpineJS */
+[x-show].tooltip {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.tooltip-enter {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.tooltip-leave {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
   </style>
 </head>
 <body>
+
   <h1>my-icon-font</h1>
-  <div id="icon-grid"></div>
+  <input type="text" placeholder="Buscar ícono..." x-model="search" />
+
+  <div class="copied-message" x-show="copiedMessage" x-transition x-text="copiedMessage"></div>
+
+  <div id="icon-grid">
+    <template x-for="icon in filteredIcons" :key="icon">
+      <div class="icon group" @click="copy(icon)">
+        <i :class="`icon-${icon}`"></i>
+        <span x-text="`icon-${icon}`"></span>
+
+        <!-- Tooltip personalizado -->
+        <div
+          x-show="copied === icon"
+          x-transition:enter="tooltip-enter"
+          x-transition:leave="tooltip-leave"
+          class="tooltip"
+        >
+          ¡Copiado!
+        </div>
+      </div>
+    </template>
+
+  </div>
 
   <script>
-    function getIconClassNames() {
-      const classNames = [];
-      for (const sheet of document.styleSheets) {
-        try {
-          for (const rule of sheet.cssRules) {
-            if (rule.selectorText?.startsWith('.icon-')) {
-              const matches = rule.selectorText.match(/\.icon-([a-zA-Z0-9_-]+)/g);
-              if (matches) {
-                matches.forEach(sel => {
-                  const name = sel.replace('.icon-', '');
-                  if (!classNames.includes(name)) {
-                    classNames.push(name);
+    function iconSearchApp() {
+      return {
+        icons: [],
+        search: '',
+        copiedMessage: '',
+
+        init() {
+          this.icons = this.getIconClassNames();
+        },
+
+        get filteredIcons() {
+          return this.icons.filter(icon => icon.toLowerCase().includes(this.search.toLowerCase()));
+        },
+
+        getIconClassNames() {
+          const classNames = [];
+          for (const sheet of document.styleSheets) {
+            try {
+              for (const rule of sheet.cssRules) {
+                if (rule.selectorText?.startsWith('.icon-')) {
+                  const matches = rule.selectorText.match(/\.icon-([a-zA-Z0-9_-]+)/g);
+                  if (matches) {
+                    matches.forEach(sel => {
+                      const name = sel.replace('.icon-', '');
+                      if (!classNames.includes(name)) {
+                        classNames.push(name);
+                      }
+                    });
                   }
-                });
+                }
               }
+            } catch (e) {
+              // Ignorar reglas protegidas por CORS
             }
           }
-        } catch (e) {
-          // Ignorar reglas protegidas por CORS
+          return classNames.sort();
+        },
+
+        copied: null, // Trackea cuál fue copiado
+
+        copy(name) {
+          const className = `icon-${name}`;
+          navigator.clipboard.writeText(className);
+          this.copied = name;
+
+          setTimeout(() => {
+            this.copied = null;
+          }, 2000);
         }
-      }
-      return classNames.sort();
+
+      };
     }
-
-    function renderIcons() {
-      const icons = getIconClassNames();
-      const grid = document.getElementById('icon-grid');
-
-      icons.forEach(name => {
-        const div = document.createElement('div');
-        div.className = 'icon';
-        div.title = `Click to copy: icon-${name}`;
-        div.innerHTML = `
-          <i class="icon-${name}"></i>
-          <span>icon-${name}</span>
-        `;
-
-        div.addEventListener('click', () => {
-          navigator.clipboard.writeText(`icon-${name}`).catch(() => {
-            // fallback or silently fail
-          });
-        });
-
-        grid.appendChild(div);
-      });
-    }
-
-    window.onload = () => {
-      renderIcons();
-    };
   </script>
 </body>
 </html>
