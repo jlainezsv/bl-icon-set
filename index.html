@@ -3,75 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Icon Font Demo</title>
+  <title>my-icon-font</title>
   <link rel="stylesheet" href="my-icon-font.css" />
   <style>
     body {
       font-family: sans-serif;
       padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    #icon-grid {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     .icon {
-      display: inline-block;
-      text-align: center;
-      margin: 1rem;
+      background: #f0f0f0;
+      border-radius: 4px;
+      padding: 1rem;
+      width: 80px;
       cursor: pointer;
-      position: relative;
-      overflow: visible;
+      user-select: none;
     }
     .icon i {
-      font-size: 2rem;
+      font-size: 2.5rem;
       display: block;
-    }
-    .icon span {
-      margin-top: 0.5rem;
-      display: block;
+      margin-bottom: 0.5rem;
       color: #333;
     }
-    .tooltip {
-      position: absolute;
-      top: -1.5rem;
-      left: 50%;
-      transform: translateX(-50%) translateY(10px);
-      background-color: #333;
-      color: #fff;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
+    .icon span {
       font-size: 0.75rem;
+      color: #777;
+      user-select: text;
+      overflow: hidden;
+      text-overflow: ellipsis;
       white-space: nowrap;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      z-index: 10;
-    }
-    .tooltip.show {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-      pointer-events: auto;
-    }
-    .tooltip.hide {
-      opacity: 0;
-      transform: translateX(-50%) translateY(10px);
-      pointer-events: none;
     }
   </style>
-  <script>
-    div.addEventListener('click', () => {
-  navigator.clipboard.writeText(`icon-${name}`);
-
-  tooltip.classList.remove('hide');
-  tooltip.classList.add('show');
-
-  // Después de 1.5s ocultar con transition
-  setTimeout(() => {
-    tooltip.classList.remove('show');
-    tooltip.classList.add('hide');
-  }, 500);
-});
-
-  </script>
 </head>
 <body>
-  <h1>Icon Font Demo</h1>
+  <h1>my-icon-font</h1>
   <div id="icon-grid"></div>
 
   <script>
@@ -106,23 +80,16 @@
       icons.forEach(name => {
         const div = document.createElement('div');
         div.className = 'icon';
+        div.title = `Click to copy: icon-${name}`;
         div.innerHTML = `
           <i class="icon-${name}"></i>
-          <span>.icon-${name}</span>
-          <div class="tooltip">Copiado</div>
+          <span>icon-${name}</span>
         `;
-        const tooltip = div.querySelector('.tooltip');
 
         div.addEventListener('click', () => {
-          navigator.clipboard.writeText(`icon-${name}`);
-
-          tooltip.classList.remove('hide');
-          tooltip.classList.add('show');
-
-          setTimeout(() => {
-            tooltip.classList.remove('show');
-            tooltip.classList.add('hide');
-          }, 1500);
+          navigator.clipboard.writeText(`icon-${name}`).catch(() => {
+            // fallback or silently fail
+          });
         });
 
         grid.appendChild(div);
