@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "my-icon-font";
-    src: url("./my-icon-font.woff2?4786b20e0c2ad2b7a2428be114155bf4") format("woff2"),
-url("./my-icon-font.woff?4786b20e0c2ad2b7a2428be114155bf4") format("woff"),
-url("./my-icon-font.ttf?4786b20e0c2ad2b7a2428be114155bf4") format("truetype"),
-url("./my-icon-font.svg?4786b20e0c2ad2b7a2428be114155bf4#my-icon-font") format("svg");
+    font-family: "bl-icon-set";
+    src: url("./bl-icon-set.woff2?fa5ad2911a7d79e54b47767d035ec8f1") format("woff2"),
+url("./bl-icon-set.woff?fa5ad2911a7d79e54b47767d035ec8f1") format("woff"),
+url("./bl-icon-set.ttf?fa5ad2911a7d79e54b47767d035ec8f1") format("truetype"),
+url("./bl-icon-set.svg?fa5ad2911a7d79e54b47767d035ec8f1#bl-icon-set") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
-    font-family: my-icon-font !important;
+    font-family: bl-icon-set !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -299,6 +299,12 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-UI-form:before {
     content: "\f15e";
 }
-.icon-Asset-45:before {
+.icon-Icon&#x3D;bx-charts:before {
     content: "\f15f";
+}
+.icon-Icon&#x3D;Bx-LDAP+:before {
+    content: "\f160";
+}
+.icon-Asset-45:before {
+    content: "\f161";
 }
