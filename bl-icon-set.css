@@ -1,9 +1,9 @@
 @font-face {
     font-family: "bl-icon-set";
-    src: url("./bl-icon-set.woff2?fa5ad2911a7d79e54b47767d035ec8f1") format("woff2"),
-url("./bl-icon-set.woff?fa5ad2911a7d79e54b47767d035ec8f1") format("woff"),
-url("./bl-icon-set.ttf?fa5ad2911a7d79e54b47767d035ec8f1") format("truetype"),
-url("./bl-icon-set.svg?fa5ad2911a7d79e54b47767d035ec8f1#bl-icon-set") format("svg");
+    src: url("./bl-icon-set.woff2?5a8d07e3b2f198431b8e08c763d49d3f") format("woff2"),
+url("./bl-icon-set.woff?5a8d07e3b2f198431b8e08c763d49d3f") format("woff"),
+url("./bl-icon-set.ttf?5a8d07e3b2f198431b8e08c763d49d3f") format("truetype"),
+url("./bl-icon-set.svg?5a8d07e3b2f198431b8e08c763d49d3f#bl-icon-set") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -248,61 +248,61 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-bx-mail:before {
     content: "\f14d";
 }
-.icon-bx-ini:before {
+.icon-bx-ldap:before {
     content: "\f14e";
 }
-.icon-bx-image:before {
+.icon-bx-ini:before {
     content: "\f14f";
 }
-.icon-bx-hypersql:before {
+.icon-bx-image:before {
     content: "\f150";
 }
-.icon-bx-esapi:before {
+.icon-bx-hypersql:before {
     content: "\f151";
 }
-.icon-bx-derby:before {
+.icon-bx-esapi:before {
     content: "\f152";
 }
-.icon-bluesky:before {
+.icon-bx-derby:before {
     content: "\f153";
 }
-.icon-blog:before {
+.icon-bx-charts:before {
     content: "\f154";
 }
-.icon-bl-horn:before {
+.icon-bluesky:before {
     content: "\f155";
 }
-.icon-bl-framework:before {
+.icon-blog:before {
     content: "\f156";
 }
-.icon-backslash:before {
+.icon-bl-horn:before {
     content: "\f157";
 }
-.icon-arrow-up:before {
+.icon-bl-framework:before {
     content: "\f158";
 }
-.icon-arrow-right:before {
+.icon-backslash:before {
     content: "\f159";
 }
-.icon-arrow-left:before {
+.icon-arrow-up:before {
     content: "\f15a";
 }
-.icon-arrow-down:before {
+.icon-arrow-right:before {
     content: "\f15b";
 }
-.icon-ai:before {
+.icon-arrow-left:before {
     content: "\f15c";
 }
-.icon-YAML:before {
+.icon-arrow-down:before {
     content: "\f15d";
 }
-.icon-UI-form:before {
+.icon-ai:before {
     content: "\f15e";
 }
-.icon-Icon&#x3D;bx-charts:before {
+.icon-YAML:before {
     content: "\f15f";
 }
-.icon-Icon&#x3D;Bx-LDAP+:before {
+.icon-UI-form:before {
     content: "\f160";
 }
 .icon-Asset-45:before {
