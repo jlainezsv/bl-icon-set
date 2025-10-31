@@ -1,9 +1,9 @@
 @font-face {
     font-family: "bl-icon-set";
-    src: url("./bl-icon-set.woff2?005d0ed3affc928522455d0ee9ed03e5") format("woff2"),
-url("./bl-icon-set.woff?005d0ed3affc928522455d0ee9ed03e5") format("woff"),
-url("./bl-icon-set.ttf?005d0ed3affc928522455d0ee9ed03e5") format("truetype"),
-url("./bl-icon-set.svg?005d0ed3affc928522455d0ee9ed03e5#bl-icon-set") format("svg");
+    src: url("./bl-icon-set.woff2?98872c7c895a1813786968cb2c398568") format("woff2"),
+url("./bl-icon-set.woff?98872c7c895a1813786968cb2c398568") format("woff"),
+url("./bl-icon-set.ttf?98872c7c895a1813786968cb2c398568") format("truetype"),
+url("./bl-icon-set.svg?98872c7c895a1813786968cb2c398568#bl-icon-set") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -203,108 +203,120 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-check:before {
     content: "\f13e";
 }
-.icon-caching:before {
+.icon-cfschedule:before {
     content: "\f13f";
 }
-.icon-bx-web-support:before {
+.icon-caching:before {
     content: "\f140";
 }
-.icon-bx-wddx:before {
+.icon-bx-web-support:before {
     content: "\f141";
 }
-.icon-bx-validate:before {
+.icon-bx-wddx:before {
     content: "\f142";
 }
-.icon-bx-sqlite:before {
+.icon-bx-validate:before {
     content: "\f143";
 }
-.icon-bx-servlet:before {
+.icon-bx-sqlite:before {
     content: "\f144";
 }
-.icon-bx-postgresql:before {
+.icon-bx-servlet:before {
     content: "\f145";
 }
-.icon-bx-pdf:before {
+.icon-bx-postgresql:before {
     content: "\f146";
 }
-.icon-bx-oshi:before {
+.icon-bx-pdfplus:before {
     content: "\f147";
 }
-.icon-bx-orm:before {
+.icon-bx-pdf:before {
     content: "\f148";
 }
-.icon-bx-oracle:before {
+.icon-bx-oshi:before {
     content: "\f149";
 }
-.icon-bx-mysql:before {
+.icon-bx-orm:before {
     content: "\f14a";
 }
-.icon-bx-mssql:before {
+.icon-bx-oracle:before {
     content: "\f14b";
 }
-.icon-bx-mariadb:before {
+.icon-bx-mysql:before {
     content: "\f14c";
 }
-.icon-bx-mail:before {
+.icon-bx-mssql:before {
     content: "\f14d";
 }
-.icon-bx-ldap:before {
+.icon-bx-mariadb:before {
     content: "\f14e";
 }
-.icon-bx-ini:before {
+.icon-bx-mail:before {
     content: "\f14f";
 }
-.icon-bx-image:before {
+.icon-bx-ldap:before {
     content: "\f150";
 }
-.icon-bx-hypersql:before {
+.icon-bx-ini:before {
     content: "\f151";
 }
-.icon-bx-esapi:before {
+.icon-bx-image:before {
     content: "\f152";
 }
-.icon-bx-derby:before {
+.icon-bx-hypersql:before {
     content: "\f153";
 }
-.icon-bx-charts:before {
+.icon-bx-esapi:before {
     content: "\f154";
 }
-.icon-bluesky:before {
+.icon-bx-derby:before {
     content: "\f155";
 }
-.icon-blog:before {
+.icon-bx-csv:before {
     content: "\f156";
 }
-.icon-bl-horn:before {
+.icon-bx-charts:before {
     content: "\f157";
 }
-.icon-bl-framework:before {
+.icon-bx-admin:before {
     content: "\f158";
 }
-.icon-backslash:before {
+.icon-bluesky:before {
     content: "\f159";
 }
-.icon-arrow-up:before {
+.icon-blog:before {
     content: "\f15a";
 }
-.icon-arrow-right:before {
+.icon-bl-horn:before {
     content: "\f15b";
 }
-.icon-arrow-left:before {
+.icon-bl-framework:before {
     content: "\f15c";
 }
-.icon-arrow-down:before {
+.icon-backslash:before {
     content: "\f15d";
 }
-.icon-ai:before {
+.icon-arrow-up:before {
     content: "\f15e";
 }
-.icon-YAML:before {
+.icon-arrow-right:before {
     content: "\f15f";
 }
-.icon-UI-form:before {
+.icon-arrow-left:before {
     content: "\f160";
 }
-.icon-Asset-45:before {
+.icon-arrow-down:before {
     content: "\f161";
+}
+.icon-ai:before {
+    content: "\f162";
+}
+.icon-YAML:before {
+    content: "\f163";
+}
+.icon-UI-form:before {
+    content: "\f164";
+}
+.icon-Asset-45:before {
+    content: "\f165";
 }
