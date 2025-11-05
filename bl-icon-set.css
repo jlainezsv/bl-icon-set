@@ -1,9 +1,9 @@
 @font-face {
     font-family: "bl-icon-set";
-    src: url("./bl-icon-set.woff2?98872c7c895a1813786968cb2c398568") format("woff2"),
-url("./bl-icon-set.woff?98872c7c895a1813786968cb2c398568") format("woff"),
-url("./bl-icon-set.ttf?98872c7c895a1813786968cb2c398568") format("truetype"),
-url("./bl-icon-set.svg?98872c7c895a1813786968cb2c398568#bl-icon-set") format("svg");
+    src: url("./bl-icon-set.woff2?1980870f033d92bc110d03858fbc5dae") format("woff2"),
+url("./bl-icon-set.woff?1980870f033d92bc110d03858fbc5dae") format("woff"),
+url("./bl-icon-set.ttf?1980870f033d92bc110d03858fbc5dae") format("truetype"),
+url("./bl-icon-set.svg?1980870f033d92bc110d03858fbc5dae#bl-icon-set") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -221,102 +221,123 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-bx-sqlite:before {
     content: "\f144";
 }
-.icon-bx-servlet:before {
+.icon-bx-spreadsheet:before {
     content: "\f145";
 }
-.icon-bx-postgresql:before {
+.icon-bx-servlet:before {
     content: "\f146";
 }
-.icon-bx-pdfplus:before {
+.icon-bx-postgresql:before {
     content: "\f147";
 }
-.icon-bx-pdf:before {
+.icon-bx-pop:before {
     content: "\f148";
 }
-.icon-bx-oshi:before {
+.icon-bx-pdfplus:before {
     content: "\f149";
 }
-.icon-bx-orm:before {
+.icon-bx-pdf:before {
     content: "\f14a";
 }
-.icon-bx-oracle:before {
+.icon-bx-oshi:before {
     content: "\f14b";
 }
-.icon-bx-mysql:before {
+.icon-bx-orm:before {
     content: "\f14c";
 }
-.icon-bx-mssql:before {
+.icon-bx-oracle:before {
     content: "\f14d";
 }
-.icon-bx-mariadb:before {
+.icon-bx-mysql:before {
     content: "\f14e";
 }
-.icon-bx-mail:before {
+.icon-bx-mssql:before {
     content: "\f14f";
 }
-.icon-bx-ldap:before {
+.icon-bx-markdown:before {
     content: "\f150";
 }
-.icon-bx-ini:before {
+.icon-bx-mariadb:before {
     content: "\f151";
 }
-.icon-bx-image:before {
+.icon-bx-mail:before {
     content: "\f152";
 }
-.icon-bx-hypersql:before {
+.icon-bx-ldap:before {
     content: "\f153";
 }
-.icon-bx-esapi:before {
+.icon-bx-jsoup:before {
     content: "\f154";
 }
-.icon-bx-derby:before {
+.icon-bx-ini:before {
     content: "\f155";
 }
-.icon-bx-csv:before {
+.icon-bx-image:before {
     content: "\f156";
 }
-.icon-bx-charts:before {
+.icon-bx-hypersql:before {
     content: "\f157";
 }
-.icon-bx-admin:before {
+.icon-bx-feed:before {
     content: "\f158";
 }
-.icon-bluesky:before {
+.icon-bx-esapi:before {
     content: "\f159";
 }
-.icon-blog:before {
+.icon-bx-derby:before {
     content: "\f15a";
 }
-.icon-bl-horn:before {
+.icon-bx-csv:before {
     content: "\f15b";
 }
-.icon-bl-framework:before {
+.icon-bx-csrf:before {
     content: "\f15c";
 }
-.icon-backslash:before {
+.icon-bx-compact-ui:before {
     content: "\f15d";
 }
-.icon-arrow-up:before {
+.icon-bx-charts:before {
     content: "\f15e";
 }
-.icon-arrow-right:before {
+.icon-bx-admin:before {
     content: "\f15f";
 }
-.icon-arrow-left:before {
+.icon-bluesky:before {
     content: "\f160";
 }
-.icon-arrow-down:before {
+.icon-blog:before {
     content: "\f161";
 }
-.icon-ai:before {
+.icon-bl-horn:before {
     content: "\f162";
 }
-.icon-YAML:before {
+.icon-bl-framework:before {
     content: "\f163";
 }
-.icon-UI-form:before {
+.icon-backslash:before {
     content: "\f164";
 }
-.icon-Asset-45:before {
+.icon-arrow-up:before {
     content: "\f165";
+}
+.icon-arrow-right:before {
+    content: "\f166";
+}
+.icon-arrow-left:before {
+    content: "\f167";
+}
+.icon-arrow-down:before {
+    content: "\f168";
+}
+.icon-ai:before {
+    content: "\f169";
+}
+.icon-YAML:before {
+    content: "\f16a";
+}
+.icon-UI-form:before {
+    content: "\f16b";
+}
+.icon-Asset-45:before {
+    content: "\f16c";
 }
