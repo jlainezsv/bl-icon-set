@@ -1,9 +1,9 @@
 @font-face {
     font-family: "bl-icon-set";
-    src: url("./bl-icon-set.woff2?27e51d70a63dc2728be6b9cd67d3cf6b") format("woff2"),
-url("./bl-icon-set.woff?27e51d70a63dc2728be6b9cd67d3cf6b") format("woff"),
-url("./bl-icon-set.ttf?27e51d70a63dc2728be6b9cd67d3cf6b") format("truetype"),
-url("./bl-icon-set.svg?27e51d70a63dc2728be6b9cd67d3cf6b#bl-icon-set") format("svg");
+    src: url("./bl-icon-set.woff2?cc9d753de189fc0fc256f41b15b1dec6") format("woff2"),
+url("./bl-icon-set.woff?cc9d753de189fc0fc256f41b15b1dec6") format("woff"),
+url("./bl-icon-set.ttf?cc9d753de189fc0fc256f41b15b1dec6") format("truetype"),
+url("./bl-icon-set.svg?cc9d753de189fc0fc256f41b15b1dec6#bl-icon-set") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -296,48 +296,51 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 .icon-bx-csrf:before {
     content: "\f15d";
 }
-.icon-bx-compact-ui:before {
+.icon-bx-couchbase:before {
     content: "\f15e";
 }
-.icon-bx-charts:before {
+.icon-bx-compact-ui:before {
     content: "\f15f";
 }
-.icon-bx-admin:before {
+.icon-bx-charts:before {
     content: "\f160";
 }
-.icon-bluesky:before {
+.icon-bx-admin:before {
     content: "\f161";
 }
-.icon-blog:before {
+.icon-bluesky:before {
     content: "\f162";
 }
-.icon-bl-horn:before {
+.icon-blog:before {
     content: "\f163";
 }
-.icon-bl-framework:before {
+.icon-bl-horn:before {
     content: "\f164";
 }
-.icon-backslash:before {
+.icon-bl-framework:before {
     content: "\f165";
 }
-.icon-arrow-up:before {
+.icon-backslash:before {
     content: "\f166";
 }
-.icon-arrow-right:before {
+.icon-arrow-up:before {
     content: "\f167";
 }
-.icon-arrow-left:before {
+.icon-arrow-right:before {
     content: "\f168";
 }
-.icon-arrow-down:before {
+.icon-arrow-left:before {
     content: "\f169";
 }
-.icon-ai:before {
+.icon-arrow-down:before {
     content: "\f16a";
 }
-.icon-YAML:before {
+.icon-ai:before {
     content: "\f16b";
 }
-.icon-UI-form:before {
+.icon-YAML:before {
     content: "\f16c";
+}
+.icon-UI-form:before {
+    content: "\f16d";
 }
