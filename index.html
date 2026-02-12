@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Icon Font Demo</title>
+
   <link rel="stylesheet" href="bl-icon-set.css" />
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
   <style>
     body {
       font-family: sans-serif;
@@ -67,66 +69,56 @@
     .copied-message.show {
       opacity: 1;
     }
+
     .tooltip {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #4f46e5;
-  color: white;
-  font-size: 0.875rem;
-  padding: 0.75rem 1.25rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #4f46e5;
+      color: white;
+      font-size: 0.875rem;
+      padding: 0.75rem 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
 
-/* Animaciones con AlpineJS */
-[x-show].tooltip {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.tooltip-enter {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.95);
-}
-
-.tooltip-leave {
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.95);
-}
-
+    [x-show].tooltip {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
   </style>
 </head>
+
 <body>
 
   <h1>my-icon-font</h1>
   <input type="text" placeholder="Buscar ícono..." x-model="search" />
 
-  <div class="copied-message" x-show="copiedMessage" x-transition x-text="copiedMessage"></div>
+  <div
+    class="copied-message"
+    :class="{ 'show': copiedMessage }"
+    x-text="copiedMessage"
+  ></div>
 
   <div id="icon-grid">
-    <template x-for="icon in filteredIcons" :key="icon">
+    <template x-for="icon in filteredIcons" :key="icon.name">
       <div class="icon group" @click="copy(icon)">
-        <i :class="`icon-${icon}`"></i>
-        <span x-text="`icon-${icon}`"></span>
+        <i :class="icon.class"></i>
+        <span x-text="icon.class"></span>
 
-        <!-- Tooltip personalizado -->
         <div
-          x-show="copied === icon"
-          x-transition:enter="tooltip-enter"
-          x-transition:leave="tooltip-leave"
+          x-show="copied === icon.name"
           class="tooltip"
         >
           ¡Copiado!
         </div>
       </div>
     </template>
-
   </div>
 
   <script>
@@ -134,54 +126,34 @@
       return {
         icons: [],
         search: '',
+        copied: null,
         copiedMessage: '',
 
-        init() {
-          this.icons = this.getIconClassNames();
+        async init() {
+          const res = await fetch('./icons.manifest.json');
+          this.icons = await res.json();
         },
 
         get filteredIcons() {
-          return this.icons.filter(icon => icon.toLowerCase().includes(this.search.toLowerCase()));
+          return this.icons.filter(icon =>
+            icon.name.toLowerCase().includes(this.search.toLowerCase())
+          );
         },
 
-        getIconClassNames() {
-          const classNames = [];
-          for (const sheet of document.styleSheets) {
-            try {
-              for (const rule of sheet.cssRules) {
-                if (rule.selectorText?.startsWith('.icon-')) {
-                  const matches = rule.selectorText.match(/\.icon-([a-zA-Z0-9_-]+)/g);
-                  if (matches) {
-                    matches.forEach(sel => {
-                      const name = sel.replace('.icon-', '');
-                      if (!classNames.includes(name)) {
-                        classNames.push(name);
-                      }
-                    });
-                  }
-                }
-              }
-            } catch (e) {
-              // Ignorar reglas protegidas por CORS
-            }
-          }
-          return classNames.sort();
-        },
+        copy(icon) {
+          navigator.clipboard.writeText(icon.class);
 
-        copied: null, // Trackea cuál fue copiado
-
-        copy(name) {
-          const className = `icon-${name}`;
-          navigator.clipboard.writeText(className);
-          this.copied = name;
+          this.copied = icon.name;
+          this.copiedMessage = `${icon.class} copiado`;
 
           setTimeout(() => {
             this.copied = null;
+            this.copiedMessage = '';
           }, 2000);
         }
-
       };
     }
   </script>
+
 </body>
 </html>

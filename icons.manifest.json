@@ -1,0 +1,562 @@
+[
+  {
+    "name": "UI-form",
+    "class": "icon-UI-form",
+    "unicode": "f101"
+  },
+  {
+    "name": "YAML",
+    "class": "icon-YAML",
+    "unicode": "f102"
+  },
+  {
+    "name": "ai",
+    "class": "icon-ai",
+    "unicode": "f103"
+  },
+  {
+    "name": "arrow-down",
+    "class": "icon-arrow-down",
+    "unicode": "f104"
+  },
+  {
+    "name": "arrow-left",
+    "class": "icon-arrow-left",
+    "unicode": "f105"
+  },
+  {
+    "name": "arrow-right",
+    "class": "icon-arrow-right",
+    "unicode": "f106"
+  },
+  {
+    "name": "arrow-up",
+    "class": "icon-arrow-up",
+    "unicode": "f107"
+  },
+  {
+    "name": "backslash",
+    "class": "icon-backslash",
+    "unicode": "f108"
+  },
+  {
+    "name": "bl-framework",
+    "class": "icon-bl-framework",
+    "unicode": "f109"
+  },
+  {
+    "name": "bl-horn",
+    "class": "icon-bl-horn",
+    "unicode": "f10a"
+  },
+  {
+    "name": "blog",
+    "class": "icon-blog",
+    "unicode": "f10b"
+  },
+  {
+    "name": "bluesky",
+    "class": "icon-bluesky",
+    "unicode": "f10c"
+  },
+  {
+    "name": "bx-admin",
+    "class": "icon-bx-admin",
+    "unicode": "f10d"
+  },
+  {
+    "name": "bx-charts",
+    "class": "icon-bx-charts",
+    "unicode": "f10e"
+  },
+  {
+    "name": "bx-compact-ui",
+    "class": "icon-bx-compact-ui",
+    "unicode": "f10f"
+  },
+  {
+    "name": "bx-couchbase",
+    "class": "icon-bx-couchbase",
+    "unicode": "f110"
+  },
+  {
+    "name": "bx-csrf",
+    "class": "icon-bx-csrf",
+    "unicode": "f111"
+  },
+  {
+    "name": "bx-csv",
+    "class": "icon-bx-csv",
+    "unicode": "f112"
+  },
+  {
+    "name": "bx-derby",
+    "class": "icon-bx-derby",
+    "unicode": "f113"
+  },
+  {
+    "name": "bx-esapi",
+    "class": "icon-bx-esapi",
+    "unicode": "f114"
+  },
+  {
+    "name": "bx-feed",
+    "class": "icon-bx-feed",
+    "unicode": "f115"
+  },
+  {
+    "name": "bx-hypersql",
+    "class": "icon-bx-hypersql",
+    "unicode": "f116"
+  },
+  {
+    "name": "bx-image",
+    "class": "icon-bx-image",
+    "unicode": "f117"
+  },
+  {
+    "name": "bx-ini",
+    "class": "icon-bx-ini",
+    "unicode": "f118"
+  },
+  {
+    "name": "bx-jsoup",
+    "class": "icon-bx-jsoup",
+    "unicode": "f119"
+  },
+  {
+    "name": "bx-ldap",
+    "class": "icon-bx-ldap",
+    "unicode": "f11a"
+  },
+  {
+    "name": "bx-mail",
+    "class": "icon-bx-mail",
+    "unicode": "f11b"
+  },
+  {
+    "name": "bx-mariadb",
+    "class": "icon-bx-mariadb",
+    "unicode": "f11c"
+  },
+  {
+    "name": "bx-markdown",
+    "class": "icon-bx-markdown",
+    "unicode": "f11d"
+  },
+  {
+    "name": "bx-mssql",
+    "class": "icon-bx-mssql",
+    "unicode": "f11e"
+  },
+  {
+    "name": "bx-mysql",
+    "class": "icon-bx-mysql",
+    "unicode": "f11f"
+  },
+  {
+    "name": "bx-oracle",
+    "class": "icon-bx-oracle",
+    "unicode": "f120"
+  },
+  {
+    "name": "bx-orm",
+    "class": "icon-bx-orm",
+    "unicode": "f121"
+  },
+  {
+    "name": "bx-oshi",
+    "class": "icon-bx-oshi",
+    "unicode": "f122"
+  },
+  {
+    "name": "bx-password-encryption",
+    "class": "icon-bx-password-encryption",
+    "unicode": "f123"
+  },
+  {
+    "name": "bx-pdf",
+    "class": "icon-bx-pdf",
+    "unicode": "f124"
+  },
+  {
+    "name": "bx-pdfplus",
+    "class": "icon-bx-pdfplus",
+    "unicode": "f125"
+  },
+  {
+    "name": "bx-pop",
+    "class": "icon-bx-pop",
+    "unicode": "f126"
+  },
+  {
+    "name": "bx-postgresql",
+    "class": "icon-bx-postgresql",
+    "unicode": "f127"
+  },
+  {
+    "name": "bx-servlet",
+    "class": "icon-bx-servlet",
+    "unicode": "f128"
+  },
+  {
+    "name": "bx-spreadsheet",
+    "class": "icon-bx-spreadsheet",
+    "unicode": "f129"
+  },
+  {
+    "name": "bx-sqlite",
+    "class": "icon-bx-sqlite",
+    "unicode": "f12a"
+  },
+  {
+    "name": "bx-validate",
+    "class": "icon-bx-validate",
+    "unicode": "f12b"
+  },
+  {
+    "name": "bx-wddx",
+    "class": "icon-bx-wddx",
+    "unicode": "f12c"
+  },
+  {
+    "name": "bx-web-support",
+    "class": "icon-bx-web-support",
+    "unicode": "f12d"
+  },
+  {
+    "name": "caching",
+    "class": "icon-caching",
+    "unicode": "f12e"
+  },
+  {
+    "name": "cfschedule",
+    "class": "icon-cfschedule",
+    "unicode": "f12f"
+  },
+  {
+    "name": "check",
+    "class": "icon-check",
+    "unicode": "f130"
+  },
+  {
+    "name": "chevron-down",
+    "class": "icon-chevron-down",
+    "unicode": "f131"
+  },
+  {
+    "name": "chevron-left",
+    "class": "icon-chevron-left",
+    "unicode": "f132"
+  },
+  {
+    "name": "chevron-right",
+    "class": "icon-chevron-right",
+    "unicode": "f133"
+  },
+  {
+    "name": "chevron-up",
+    "class": "icon-chevron-up",
+    "unicode": "f134"
+  },
+  {
+    "name": "chrome",
+    "class": "icon-chrome",
+    "unicode": "f135"
+  },
+  {
+    "name": "close",
+    "class": "icon-close",
+    "unicode": "f136"
+  },
+  {
+    "name": "colon",
+    "class": "icon-colon",
+    "unicode": "f137"
+  },
+  {
+    "name": "community",
+    "class": "icon-community",
+    "unicode": "f138"
+  },
+  {
+    "name": "copy",
+    "class": "icon-copy",
+    "unicode": "f139"
+  },
+  {
+    "name": "debug",
+    "class": "icon-debug",
+    "unicode": "f13a"
+  },
+  {
+    "name": "dependency",
+    "class": "icon-dependency",
+    "unicode": "f13b"
+  },
+  {
+    "name": "digital-ocean",
+    "class": "icon-digital-ocean",
+    "unicode": "f13c"
+  },
+  {
+    "name": "discourse",
+    "class": "icon-discourse",
+    "unicode": "f13d"
+  },
+  {
+    "name": "docker",
+    "class": "icon-docker",
+    "unicode": "f13e"
+  },
+  {
+    "name": "document",
+    "class": "icon-document",
+    "unicode": "f13f"
+  },
+  {
+    "name": "download",
+    "class": "icon-download",
+    "unicode": "f140"
+  },
+  {
+    "name": "dynamic",
+    "class": "icon-dynamic",
+    "unicode": "f141"
+  },
+  {
+    "name": "ecosystem",
+    "class": "icon-ecosystem",
+    "unicode": "f142"
+  },
+  {
+    "name": "event",
+    "class": "icon-event",
+    "unicode": "f143"
+  },
+  {
+    "name": "experience",
+    "class": "icon-experience",
+    "unicode": "f144"
+  },
+  {
+    "name": "facebook",
+    "class": "icon-facebook",
+    "unicode": "f145"
+  },
+  {
+    "name": "file",
+    "class": "icon-file",
+    "unicode": "f146"
+  },
+  {
+    "name": "framework",
+    "class": "icon-framework",
+    "unicode": "f147"
+  },
+  {
+    "name": "ftp",
+    "class": "icon-ftp",
+    "unicode": "f148"
+  },
+  {
+    "name": "functions",
+    "class": "icon-functions",
+    "unicode": "f149"
+  },
+  {
+    "name": "github",
+    "class": "icon-github",
+    "unicode": "f14a"
+  },
+  {
+    "name": "home",
+    "class": "icon-home",
+    "unicode": "f14b"
+  },
+  {
+    "name": "java",
+    "class": "icon-java",
+    "unicode": "f14c"
+  },
+  {
+    "name": "lambda",
+    "class": "icon-lambda",
+    "unicode": "f14d"
+  },
+  {
+    "name": "linkedin",
+    "class": "icon-linkedin",
+    "unicode": "f14e"
+  },
+  {
+    "name": "meta-programming",
+    "class": "icon-meta-programming",
+    "unicode": "f14f"
+  },
+  {
+    "name": "minus",
+    "class": "icon-minus",
+    "unicode": "f150"
+  },
+  {
+    "name": "modular",
+    "class": "icon-modular",
+    "unicode": "f151"
+  },
+  {
+    "name": "multi-runtime",
+    "class": "icon-multi-runtime",
+    "unicode": "f152"
+  },
+  {
+    "name": "multidevice",
+    "class": "icon-multidevice",
+    "unicode": "f153"
+  },
+  {
+    "name": "open",
+    "class": "icon-open",
+    "unicode": "f154"
+  },
+  {
+    "name": "opensource",
+    "class": "icon-opensource",
+    "unicode": "f155"
+  },
+  {
+    "name": "patreon",
+    "class": "icon-patreon",
+    "unicode": "f156"
+  },
+  {
+    "name": "play",
+    "class": "icon-play",
+    "unicode": "f157"
+  },
+  {
+    "name": "plus",
+    "class": "icon-plus",
+    "unicode": "f158"
+  },
+  {
+    "name": "podcast",
+    "class": "icon-podcast",
+    "unicode": "f159"
+  },
+  {
+    "name": "prices",
+    "class": "icon-prices",
+    "unicode": "f15a"
+  },
+  {
+    "name": "puzzles",
+    "class": "icon-puzzles",
+    "unicode": "f15b"
+  },
+  {
+    "name": "python",
+    "class": "icon-python",
+    "unicode": "f15c"
+  },
+  {
+    "name": "redis",
+    "class": "icon-redis",
+    "unicode": "f15d"
+  },
+  {
+    "name": "schedule",
+    "class": "icon-schedule",
+    "unicode": "f15e"
+  },
+  {
+    "name": "screen",
+    "class": "icon-screen",
+    "unicode": "f15f"
+  },
+  {
+    "name": "scripting",
+    "class": "icon-scripting",
+    "unicode": "f160"
+  },
+  {
+    "name": "search",
+    "class": "icon-search",
+    "unicode": "f161"
+  },
+  {
+    "name": "server",
+    "class": "icon-server",
+    "unicode": "f162"
+  },
+  {
+    "name": "serverless",
+    "class": "icon-serverless",
+    "unicode": "f163"
+  },
+  {
+    "name": "slack",
+    "class": "icon-slack",
+    "unicode": "f164"
+  },
+  {
+    "name": "slash",
+    "class": "icon-slash",
+    "unicode": "f165"
+  },
+  {
+    "name": "superior-performance",
+    "class": "icon-superior-performance",
+    "unicode": "f166"
+  },
+  {
+    "name": "synamic",
+    "class": "icon-synamic",
+    "unicode": "f167"
+  },
+  {
+    "name": "syntax",
+    "class": "icon-syntax",
+    "unicode": "f168"
+  },
+  {
+    "name": "testing",
+    "class": "icon-testing",
+    "unicode": "f169"
+  },
+  {
+    "name": "threads",
+    "class": "icon-threads",
+    "unicode": "f16a"
+  },
+  {
+    "name": "token",
+    "class": "icon-token",
+    "unicode": "f16b"
+  },
+  {
+    "name": "tooling",
+    "class": "icon-tooling",
+    "unicode": "f16c"
+  },
+  {
+    "name": "tower",
+    "class": "icon-tower",
+    "unicode": "f16d"
+  },
+  {
+    "name": "vscode",
+    "class": "icon-vscode",
+    "unicode": "f16e"
+  },
+  {
+    "name": "world-class-support",
+    "class": "icon-world-class-support",
+    "unicode": "f16f"
+  },
+  {
+    "name": "x",
+    "class": "icon-x",
+    "unicode": "f170"
+  }
+]
