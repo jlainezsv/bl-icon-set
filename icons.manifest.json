@@ -110,6 +110,11 @@
     "unicode": "f116"
   },
   {
+    "name": "bx-ide",
+    "class": "icon-bx-ide",
+    "unicode": "f172"
+  },
+  {
     "name": "bx-image",
     "class": "icon-bx-image",
     "unicode": "f117"
@@ -153,6 +158,11 @@
     "name": "bx-mysql",
     "class": "icon-bx-mysql",
     "unicode": "f11f"
+  },
+  {
+    "name": "bx-neovim",
+    "class": "icon-bx-neovim",
+    "unicode": "f173"
   },
   {
     "name": "bx-oracle",
@@ -268,6 +278,11 @@
     "name": "close",
     "class": "icon-close",
     "unicode": "f136"
+  },
+  {
+    "name": "coffee",
+    "class": "icon-coffee",
+    "unicode": "f171"
   },
   {
     "name": "colon",
