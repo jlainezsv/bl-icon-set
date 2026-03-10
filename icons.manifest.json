@@ -280,11 +280,6 @@
     "unicode": "f136"
   },
   {
-    "name": "coffee",
-    "class": "icon-coffee",
-    "unicode": "f171"
-  },
-  {
     "name": "colon",
     "class": "icon-colon",
     "unicode": "f137"
@@ -395,6 +390,11 @@
     "unicode": "f14c"
   },
   {
+    "name": "jetbrains-icon",
+    "class": "icon-jetbrains-icon",
+    "unicode": "f174"
+  },
+  {
     "name": "lambda",
     "class": "icon-lambda",
     "unicode": "f14d"
@@ -428,6 +428,11 @@
     "name": "multidevice",
     "class": "icon-multidevice",
     "unicode": "f153"
+  },
+  {
+    "name": "open-vsx-registry-icon",
+    "class": "icon-open-vsx-registry-icon",
+    "unicode": "f175"
   },
   {
     "name": "open",
