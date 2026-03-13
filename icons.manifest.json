@@ -525,6 +525,11 @@
     "unicode": "f165"
   },
   {
+    "name": "spring-boot",
+    "class": "icon-spring-boot",
+    "unicode": "f176"
+  },
+  {
     "name": "superior-performance",
     "class": "icon-superior-performance",
     "unicode": "f166"
