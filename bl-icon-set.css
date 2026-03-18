@@ -1,9 +1,9 @@
 @font-face {
     font-family: "bl-icon-set";
-    src: url("./bl-icon-set.woff2?7288afd9ed0a2c09728ed6599d2e9c9e") format("woff2"),
-url("./bl-icon-set.woff?7288afd9ed0a2c09728ed6599d2e9c9e") format("woff"),
-url("./bl-icon-set.ttf?7288afd9ed0a2c09728ed6599d2e9c9e") format("truetype"),
-url("./bl-icon-set.svg?7288afd9ed0a2c09728ed6599d2e9c9e#bl-icon-set") format("svg");
+    src: url("./bl-icon-set.woff2?082f9cfdc6f574b60f39af7f88c2f918") format("woff2"),
+url("./bl-icon-set.woff?082f9cfdc6f574b60f39af7f88c2f918") format("woff"),
+url("./bl-icon-set.ttf?082f9cfdc6f574b60f39af7f88c2f918") format("truetype"),
+url("./bl-icon-set.svg?082f9cfdc6f574b60f39af7f88c2f918#bl-icon-set") format("svg");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
