@@ -1,15 +1,5 @@
 [
   {
-    "name": "UI-form",
-    "class": "icon-UI-form",
-    "unicode": "f101"
-  },
-  {
-    "name": "YAML",
-    "class": "icon-YAML",
-    "unicode": "f102"
-  },
-  {
     "name": "ai",
     "class": "icon-ai",
     "unicode": "f103"
@@ -430,14 +420,14 @@
     "unicode": "f153"
   },
   {
-    "name": "open-vsx-registry-icon",
-    "class": "icon-open-vsx-registry-icon",
-    "unicode": "f175"
-  },
-  {
     "name": "open",
     "class": "icon-open",
     "unicode": "f154"
+  },
+  {
+    "name": "open-vsx-registry-icon",
+    "class": "icon-open-vsx-registry-icon",
+    "unicode": "f175"
   },
   {
     "name": "opensource",
@@ -570,6 +560,11 @@
     "unicode": "f16d"
   },
   {
+    "name": "UI-form",
+    "class": "icon-ui-form",
+    "unicode": "f101"
+  },
+  {
     "name": "vscode",
     "class": "icon-vscode",
     "unicode": "f16e"
@@ -583,5 +578,10 @@
     "name": "x",
     "class": "icon-x",
     "unicode": "f170"
+  },
+  {
+    "name": "YAML",
+    "class": "icon-yaml",
+    "unicode": "f102"
   }
 ]

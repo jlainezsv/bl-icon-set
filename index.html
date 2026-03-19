@@ -5,13 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Icon Font Demo</title>
 
-  <link rel="stylesheet" href="bl-icon-set.css" />
+  <link rel="stylesheet" href="icons-tokens.css" />
+  <link rel="stylesheet" href="icons.css" />
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
   <style>
     body {
       font-family: sans-serif;
       padding: 2rem;
+    }
+
+    h1 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .icon-count {
+      font-size: 0.95rem;
+      color: #666;
+      font-weight: normal;
     }
 
     input[type="text"] {
@@ -96,7 +110,10 @@
 
 <body>
 
-  <h1>my-icon-font</h1>
+  <h1>
+    BOXLANG Icon Font
+    <span class="icon-count" x-text="'(' + icons.length + ' icons)'">(0 icons)</span>
+  </h1>
   <input type="text" placeholder="Buscar ícono..." x-model="search" />
 
   <div

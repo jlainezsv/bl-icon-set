@@ -1,0 +1,497 @@
+/* Stable icon API. Update this file only when icon names change. */
+@font-face {
+  font-family: "bl-icon-set";
+  src:
+    url("./bl-icon-set.woff2") format("woff2"),
+    url("./bl-icon-set.woff") format("woff"),
+    url("./bl-icon-set.ttf") format("truetype"),
+    url("./bl-icon-set.svg#bl-icon-set") format("svg");
+  font-display: block;
+}
+
+.icon::before,
+.icon-ai::before,
+.icon-arrow-down::before,
+.icon-arrow-left::before,
+.icon-arrow-right::before,
+.icon-arrow-up::before,
+.icon-backslash::before,
+.icon-bl-framework::before,
+.icon-bl-horn::before,
+.icon-blog::before,
+.icon-bluesky::before,
+.icon-bx-admin::before,
+.icon-bx-charts::before,
+.icon-bx-compact-ui::before,
+.icon-bx-couchbase::before,
+.icon-bx-csrf::before,
+.icon-bx-csv::before,
+.icon-bx-derby::before,
+.icon-bx-esapi::before,
+.icon-bx-feed::before,
+.icon-bx-hypersql::before,
+.icon-bx-ide::before,
+.icon-bx-image::before,
+.icon-bx-ini::before,
+.icon-bx-jsoup::before,
+.icon-bx-ldap::before,
+.icon-bx-mail::before,
+.icon-bx-mariadb::before,
+.icon-bx-markdown::before,
+.icon-bx-mssql::before,
+.icon-bx-mysql::before,
+.icon-bx-neovim::before,
+.icon-bx-oracle::before,
+.icon-bx-orm::before,
+.icon-bx-oshi::before,
+.icon-bx-password-encryption::before,
+.icon-bx-pdf::before,
+.icon-bx-pdfplus::before,
+.icon-bx-pop::before,
+.icon-bx-postgresql::before,
+.icon-bx-servlet::before,
+.icon-bx-spreadsheet::before,
+.icon-bx-sqlite::before,
+.icon-bx-validate::before,
+.icon-bx-wddx::before,
+.icon-bx-web-support::before,
+.icon-caching::before,
+.icon-cfschedule::before,
+.icon-check::before,
+.icon-chevron-down::before,
+.icon-chevron-left::before,
+.icon-chevron-right::before,
+.icon-chevron-up::before,
+.icon-chrome::before,
+.icon-close::before,
+.icon-colon::before,
+.icon-community::before,
+.icon-copy::before,
+.icon-debug::before,
+.icon-dependency::before,
+.icon-digital-ocean::before,
+.icon-discourse::before,
+.icon-docker::before,
+.icon-document::before,
+.icon-download::before,
+.icon-dynamic::before,
+.icon-ecosystem::before,
+.icon-event::before,
+.icon-experience::before,
+.icon-facebook::before,
+.icon-file::before,
+.icon-framework::before,
+.icon-ftp::before,
+.icon-functions::before,
+.icon-github::before,
+.icon-home::before,
+.icon-java::before,
+.icon-jetbrains-icon::before,
+.icon-lambda::before,
+.icon-linkedin::before,
+.icon-meta-programming::before,
+.icon-minus::before,
+.icon-modular::before,
+.icon-multi-runtime::before,
+.icon-multidevice::before,
+.icon-open::before,
+.icon-open-vsx-registry-icon::before,
+.icon-opensource::before,
+.icon-patreon::before,
+.icon-play::before,
+.icon-plus::before,
+.icon-podcast::before,
+.icon-prices::before,
+.icon-puzzles::before,
+.icon-python::before,
+.icon-redis::before,
+.icon-schedule::before,
+.icon-screen::before,
+.icon-scripting::before,
+.icon-search::before,
+.icon-server::before,
+.icon-serverless::before,
+.icon-slack::before,
+.icon-slash::before,
+.icon-spring-boot::before,
+.icon-superior-performance::before,
+.icon-synamic::before,
+.icon-syntax::before,
+.icon-testing::before,
+.icon-threads::before,
+.icon-token::before,
+.icon-tooling::before,
+.icon-tower::before,
+.icon-ui-form::before,
+.icon-vscode::before,
+.icon-world-class-support::before,
+.icon-x::before,
+.icon-yaml::before {
+  font-family: "bl-icon-set";
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reusable icon classes mapped to token variables. */
+.icon-ai::before {
+  content: var(--icon-ai);
+}
+.icon-arrow-down::before {
+  content: var(--icon-arrow-down);
+}
+.icon-arrow-left::before {
+  content: var(--icon-arrow-left);
+}
+.icon-arrow-right::before {
+  content: var(--icon-arrow-right);
+}
+.icon-arrow-up::before {
+  content: var(--icon-arrow-up);
+}
+.icon-backslash::before {
+  content: var(--icon-backslash);
+}
+.icon-bl-framework::before {
+  content: var(--icon-bl-framework);
+}
+.icon-bl-horn::before {
+  content: var(--icon-bl-horn);
+}
+.icon-blog::before {
+  content: var(--icon-blog);
+}
+.icon-bluesky::before {
+  content: var(--icon-bluesky);
+}
+.icon-bx-admin::before {
+  content: var(--icon-bx-admin);
+}
+.icon-bx-charts::before {
+  content: var(--icon-bx-charts);
+}
+.icon-bx-compact-ui::before {
+  content: var(--icon-bx-compact-ui);
+}
+.icon-bx-couchbase::before {
+  content: var(--icon-bx-couchbase);
+}
+.icon-bx-csrf::before {
+  content: var(--icon-bx-csrf);
+}
+.icon-bx-csv::before {
+  content: var(--icon-bx-csv);
+}
+.icon-bx-derby::before {
+  content: var(--icon-bx-derby);
+}
+.icon-bx-esapi::before {
+  content: var(--icon-bx-esapi);
+}
+.icon-bx-feed::before {
+  content: var(--icon-bx-feed);
+}
+.icon-bx-hypersql::before {
+  content: var(--icon-bx-hypersql);
+}
+.icon-bx-ide::before {
+  content: var(--icon-bx-ide);
+}
+.icon-bx-image::before {
+  content: var(--icon-bx-image);
+}
+.icon-bx-ini::before {
+  content: var(--icon-bx-ini);
+}
+.icon-bx-jsoup::before {
+  content: var(--icon-bx-jsoup);
+}
+.icon-bx-ldap::before {
+  content: var(--icon-bx-ldap);
+}
+.icon-bx-mail::before {
+  content: var(--icon-bx-mail);
+}
+.icon-bx-mariadb::before {
+  content: var(--icon-bx-mariadb);
+}
+.icon-bx-markdown::before {
+  content: var(--icon-bx-markdown);
+}
+.icon-bx-mssql::before {
+  content: var(--icon-bx-mssql);
+}
+.icon-bx-mysql::before {
+  content: var(--icon-bx-mysql);
+}
+.icon-bx-neovim::before {
+  content: var(--icon-bx-neovim);
+}
+.icon-bx-oracle::before {
+  content: var(--icon-bx-oracle);
+}
+.icon-bx-orm::before {
+  content: var(--icon-bx-orm);
+}
+.icon-bx-oshi::before {
+  content: var(--icon-bx-oshi);
+}
+.icon-bx-password-encryption::before {
+  content: var(--icon-bx-password-encryption);
+}
+.icon-bx-pdf::before {
+  content: var(--icon-bx-pdf);
+}
+.icon-bx-pdfplus::before {
+  content: var(--icon-bx-pdfplus);
+}
+.icon-bx-pop::before {
+  content: var(--icon-bx-pop);
+}
+.icon-bx-postgresql::before {
+  content: var(--icon-bx-postgresql);
+}
+.icon-bx-servlet::before {
+  content: var(--icon-bx-servlet);
+}
+.icon-bx-spreadsheet::before {
+  content: var(--icon-bx-spreadsheet);
+}
+.icon-bx-sqlite::before {
+  content: var(--icon-bx-sqlite);
+}
+.icon-bx-validate::before {
+  content: var(--icon-bx-validate);
+}
+.icon-bx-wddx::before {
+  content: var(--icon-bx-wddx);
+}
+.icon-bx-web-support::before {
+  content: var(--icon-bx-web-support);
+}
+.icon-caching::before {
+  content: var(--icon-caching);
+}
+.icon-cfschedule::before {
+  content: var(--icon-cfschedule);
+}
+.icon-check::before {
+  content: var(--icon-check);
+}
+.icon-chevron-down::before {
+  content: var(--icon-chevron-down);
+}
+.icon-chevron-left::before {
+  content: var(--icon-chevron-left);
+}
+.icon-chevron-right::before {
+  content: var(--icon-chevron-right);
+}
+.icon-chevron-up::before {
+  content: var(--icon-chevron-up);
+}
+.icon-chrome::before {
+  content: var(--icon-chrome);
+}
+.icon-close::before {
+  content: var(--icon-close);
+}
+.icon-colon::before {
+  content: var(--icon-colon);
+}
+.icon-community::before {
+  content: var(--icon-community);
+}
+.icon-copy::before {
+  content: var(--icon-copy);
+}
+.icon-debug::before {
+  content: var(--icon-debug);
+}
+.icon-dependency::before {
+  content: var(--icon-dependency);
+}
+.icon-digital-ocean::before {
+  content: var(--icon-digital-ocean);
+}
+.icon-discourse::before {
+  content: var(--icon-discourse);
+}
+.icon-docker::before {
+  content: var(--icon-docker);
+}
+.icon-document::before {
+  content: var(--icon-document);
+}
+.icon-download::before {
+  content: var(--icon-download);
+}
+.icon-dynamic::before {
+  content: var(--icon-dynamic);
+}
+.icon-ecosystem::before {
+  content: var(--icon-ecosystem);
+}
+.icon-event::before {
+  content: var(--icon-event);
+}
+.icon-experience::before {
+  content: var(--icon-experience);
+}
+.icon-facebook::before {
+  content: var(--icon-facebook);
+}
+.icon-file::before {
+  content: var(--icon-file);
+}
+.icon-framework::before {
+  content: var(--icon-framework);
+}
+.icon-ftp::before {
+  content: var(--icon-ftp);
+}
+.icon-functions::before {
+  content: var(--icon-functions);
+}
+.icon-github::before {
+  content: var(--icon-github);
+}
+.icon-home::before {
+  content: var(--icon-home);
+}
+.icon-java::before {
+  content: var(--icon-java);
+}
+.icon-jetbrains-icon::before {
+  content: var(--icon-jetbrains-icon);
+}
+.icon-lambda::before {
+  content: var(--icon-lambda);
+}
+.icon-linkedin::before {
+  content: var(--icon-linkedin);
+}
+.icon-meta-programming::before {
+  content: var(--icon-meta-programming);
+}
+.icon-minus::before {
+  content: var(--icon-minus);
+}
+.icon-modular::before {
+  content: var(--icon-modular);
+}
+.icon-multi-runtime::before {
+  content: var(--icon-multi-runtime);
+}
+.icon-multidevice::before {
+  content: var(--icon-multidevice);
+}
+.icon-open::before {
+  content: var(--icon-open);
+}
+.icon-open-vsx-registry-icon::before {
+  content: var(--icon-open-vsx-registry-icon);
+}
+.icon-opensource::before {
+  content: var(--icon-opensource);
+}
+.icon-patreon::before {
+  content: var(--icon-patreon);
+}
+.icon-play::before {
+  content: var(--icon-play);
+}
+.icon-plus::before {
+  content: var(--icon-plus);
+}
+.icon-podcast::before {
+  content: var(--icon-podcast);
+}
+.icon-prices::before {
+  content: var(--icon-prices);
+}
+.icon-puzzles::before {
+  content: var(--icon-puzzles);
+}
+.icon-python::before {
+  content: var(--icon-python);
+}
+.icon-redis::before {
+  content: var(--icon-redis);
+}
+.icon-schedule::before {
+  content: var(--icon-schedule);
+}
+.icon-screen::before {
+  content: var(--icon-screen);
+}
+.icon-scripting::before {
+  content: var(--icon-scripting);
+}
+.icon-search::before {
+  content: var(--icon-search);
+}
+.icon-server::before {
+  content: var(--icon-server);
+}
+.icon-serverless::before {
+  content: var(--icon-serverless);
+}
+.icon-slack::before {
+  content: var(--icon-slack);
+}
+.icon-slash::before {
+  content: var(--icon-slash);
+}
+.icon-spring-boot::before {
+  content: var(--icon-spring-boot);
+}
+.icon-superior-performance::before {
+  content: var(--icon-superior-performance);
+}
+.icon-synamic::before {
+  content: var(--icon-synamic);
+}
+.icon-syntax::before {
+  content: var(--icon-syntax);
+}
+.icon-testing::before {
+  content: var(--icon-testing);
+}
+.icon-threads::before {
+  content: var(--icon-threads);
+}
+.icon-token::before {
+  content: var(--icon-token);
+}
+.icon-tooling::before {
+  content: var(--icon-tooling);
+}
+.icon-tower::before {
+  content: var(--icon-tower);
+}
+.icon-ui-form::before {
+  content: var(--icon-ui-form);
+}
+.icon-vscode::before {
+  content: var(--icon-vscode);
+}
+.icon-world-class-support::before {
+  content: var(--icon-world-class-support);
+}
+.icon-x::before {
+  content: var(--icon-x);
+}
+.icon-yaml::before {
+  content: var(--icon-yaml);
+}
+
+/* Example pseudo-element usage */
+.dropdown-toggle::after {
+  font-family: "bl-icon-set";
+  content: var(--icon-chevron-down);
+}
