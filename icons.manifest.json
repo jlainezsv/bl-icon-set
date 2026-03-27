@@ -140,6 +140,11 @@
     "unicode": "f11d"
   },
   {
+    "name": "bx-matchbox",
+    "class": "icon-bx-matchbox",
+    "unicode": "f179"
+  },
+  {
     "name": "bx-mssql",
     "class": "icon-bx-mssql",
     "unicode": "f11e"
