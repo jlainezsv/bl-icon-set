@@ -375,6 +375,11 @@
     "unicode": "f14a"
   },
   {
+    "name": "google",
+    "class": "icon-google",
+    "unicode": "f17a"
+  },
+  {
     "name": "home",
     "class": "icon-home",
     "unicode": "f14b"

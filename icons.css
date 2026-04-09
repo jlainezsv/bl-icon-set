@@ -85,6 +85,7 @@
 .icon-ftp::before,
 .icon-functions::before,
 .icon-github::before,
+.icon-google::before,
 .icon-home::before,
 .icon-java::before,
 .icon-jetbrains-icon::before,
@@ -363,6 +364,9 @@
 }
 .icon-github::before {
   content: var(--icon-github);
+}
+.icon-google::before {
+  content: var(--icon-google);
 }
 .icon-home::before {
   content: var(--icon-home);
