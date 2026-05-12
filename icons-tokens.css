@@ -29,6 +29,7 @@
   --icon-bx-mariadb: "\f11c";
   --icon-bx-markdown: "\f11d";
   --icon-bx-matchbox: "\f179";
+  --icon-bx-meilisearch-plus: "\f17b";
   --icon-bx-mssql: "\f11e";
   --icon-bx-mysql: "\f11f";
   --icon-bx-neovim: "\f173";
@@ -40,7 +41,9 @@
   --icon-bx-pdfplus: "\f125";
   --icon-bx-pop: "\f126";
   --icon-bx-postgresql: "\f127";
+  --icon-bx-rest-compat: "\f17c";
   --icon-bx-servlet: "\f128";
+  --icon-bx-soap-compat: "\f17d";
   --icon-bx-spreadsheet: "\f129";
   --icon-bx-sqlite: "\f12a";
   --icon-bx-validate: "\f12b";

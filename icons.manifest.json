@@ -145,6 +145,11 @@
     "unicode": "f179"
   },
   {
+    "name": "bx-meilisearch-plus",
+    "class": "icon-bx-meilisearch-plus",
+    "unicode": "f17b"
+  },
+  {
     "name": "bx-mssql",
     "class": "icon-bx-mssql",
     "unicode": "f11e"
@@ -200,9 +205,19 @@
     "unicode": "f127"
   },
   {
+    "name": "bx-rest-compat",
+    "class": "icon-bx-rest-compat",
+    "unicode": "f17c"
+  },
+  {
     "name": "bx-servlet",
     "class": "icon-bx-servlet",
     "unicode": "f128"
+  },
+  {
+    "name": "bx-soap-compat",
+    "class": "icon-bx-soap-compat",
+    "unicode": "f17d"
   },
   {
     "name": "bx-spreadsheet",

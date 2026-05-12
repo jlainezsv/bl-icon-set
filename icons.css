@@ -39,6 +39,7 @@
 .icon-bx-mariadb::before,
 .icon-bx-markdown::before,
 .icon-bx-matchbox::before,
+.icon-bx-meilisearch-plus::before,
 .icon-bx-mssql::before,
 .icon-bx-mysql::before,
 .icon-bx-neovim::before,
@@ -50,7 +51,9 @@
 .icon-bx-pdfplus::before,
 .icon-bx-pop::before,
 .icon-bx-postgresql::before,
+.icon-bx-rest-compat::before,
 .icon-bx-servlet::before,
+.icon-bx-soap-compat::before,
 .icon-bx-spreadsheet::before,
 .icon-bx-sqlite::before,
 .icon-bx-validate::before,
@@ -227,6 +230,9 @@
 .icon-bx-matchbox::before {
   content: var(--icon-bx-matchbox);
 }
+.icon-bx-meilisearch-plus::before {
+  content: var(--icon-bx-meilisearch-plus);
+}
 .icon-bx-mssql::before {
   content: var(--icon-bx-mssql);
 }
@@ -260,8 +266,14 @@
 .icon-bx-postgresql::before {
   content: var(--icon-bx-postgresql);
 }
+.icon-bx-rest-compat::before {
+  content: var(--icon-bx-rest-compat);
+}
 .icon-bx-servlet::before {
   content: var(--icon-bx-servlet);
+}
+.icon-bx-soap-compat::before {
+  content: var(--icon-bx-soap-compat);
 }
 .icon-bx-spreadsheet::before {
   content: var(--icon-bx-spreadsheet);
