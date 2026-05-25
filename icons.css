@@ -92,8 +92,10 @@
 .icon-home::before,
 .icon-java::before,
 .icon-jetbrains-icon::before,
+.icon-key::before,
 .icon-lambda::before,
 .icon-linkedin::before,
+.icon-mcp::before,
 .icon-meta-programming::before,
 .icon-minus::before,
 .icon-modular::before,
@@ -389,11 +391,17 @@
 .icon-jetbrains-icon::before {
   content: var(--icon-jetbrains-icon);
 }
+.icon-key::before {
+  content: var(--icon-key);
+}
 .icon-lambda::before {
   content: var(--icon-lambda);
 }
 .icon-linkedin::before {
   content: var(--icon-linkedin);
+}
+.icon-mcp::before {
+  content: var(--icon-mcp);
 }
 .icon-meta-programming::before {
   content: var(--icon-meta-programming);
