@@ -260,6 +260,11 @@
     "unicode": "f130"
   },
   {
+    "name": "check-mark",
+    "class": "icon-check-mark",
+    "unicode": "f180"
+  },
+  {
     "name": "chevron-down",
     "class": "icon-chevron-down",
     "unicode": "f131"

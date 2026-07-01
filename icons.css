@@ -62,6 +62,7 @@
 .icon-caching::before,
 .icon-cfschedule::before,
 .icon-check::before,
+.icon-check-mark::before,
 .icon-chevron-down::before,
 .icon-chevron-left::before,
 .icon-chevron-right::before,
@@ -300,6 +301,9 @@
 }
 .icon-check::before {
   content: var(--icon-check);
+}
+.icon-check-mark::before {
+  content: var(--icon-check-mark);
 }
 .icon-chevron-down::before {
   content: var(--icon-chevron-down);
