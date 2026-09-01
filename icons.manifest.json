@@ -5,6 +5,11 @@
     "unicode": "f103"
   },
   {
+    "name": "ai-agent",
+    "class": "icon-ai-agent",
+    "unicode": "f181"
+  },
+  {
     "name": "arrow-down",
     "class": "icon-arrow-down",
     "unicode": "f104"
@@ -395,6 +400,11 @@
     "unicode": "f14a"
   },
   {
+    "name": "global-doc",
+    "class": "icon-global-doc",
+    "unicode": "f182"
+  },
+  {
     "name": "google",
     "class": "icon-google",
     "unicode": "f17a"
@@ -428,6 +438,11 @@
     "name": "linkedin",
     "class": "icon-linkedin",
     "unicode": "f14e"
+  },
+  {
+    "name": "logo-microsoft-marketplace",
+    "class": "icon-logo-microsoft-marketplace",
+    "unicode": "f183"
   },
   {
     "name": "mcp",

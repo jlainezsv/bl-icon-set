@@ -11,6 +11,7 @@
 
 .icon::before,
 .icon-ai::before,
+.icon-ai-agent::before,
 .icon-arrow-down::before,
 .icon-arrow-left::before,
 .icon-arrow-right::before,
@@ -89,6 +90,7 @@
 .icon-ftp::before,
 .icon-functions::before,
 .icon-github::before,
+.icon-global-doc::before,
 .icon-google::before,
 .icon-home::before,
 .icon-java::before,
@@ -96,6 +98,7 @@
 .icon-key::before,
 .icon-lambda::before,
 .icon-linkedin::before,
+.icon-logo-microsoft-marketplace::before,
 .icon-mcp::before,
 .icon-meta-programming::before,
 .icon-minus::before,
@@ -148,6 +151,9 @@
 /* Reusable icon classes mapped to token variables. */
 .icon-ai::before {
   content: var(--icon-ai);
+}
+.icon-ai-agent::before {
+  content: var(--icon-ai-agent);
 }
 .icon-arrow-down::before {
   content: var(--icon-arrow-down);
@@ -383,6 +389,9 @@
 .icon-github::before {
   content: var(--icon-github);
 }
+.icon-global-doc::before {
+  content: var(--icon-global-doc);
+}
 .icon-google::before {
   content: var(--icon-google);
 }
@@ -403,6 +412,9 @@
 }
 .icon-linkedin::before {
   content: var(--icon-linkedin);
+}
+.icon-logo-microsoft-marketplace::before {
+  content: var(--icon-logo-microsoft-marketplace);
 }
 .icon-mcp::before {
   content: var(--icon-mcp);
